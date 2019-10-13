@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electron App</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>My Favorite Websites</h1>
+
+    <div class="error-message"></div>
+
+    <section class="add-new-link">
+        <form class="new-link-form">
+            <input type="url" class="new-link-url" placeholder="URL" size="100" required autofocus>
+            <button type="submit" class="new-link-button" disabled>
+                Save
+            </button>
+        </form>
+    </section>
+
+    <section class="links"></section>
+
+    <section class="controls">
+        <button class="clear-storage">Clear Storage</button>
+    </section>
+
+<script>
+    require('./renderer');
+</script>
+</body>
+
+</html>

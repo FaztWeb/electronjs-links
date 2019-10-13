@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, input {
+    font: menu; /*A feature of chromium, allows to use the system Font in CSS*/
+    /*This way we can use the same font of the host Operating system*/
+}
